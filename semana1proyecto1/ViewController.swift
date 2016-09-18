@@ -1,25 +1,41 @@
-//
-//  ViewController.swift
-//  semana1proyecto1
-//
-//  Created by miguel Garcia Sanchez on 18/9/16.
-//  Copyright © 2016 miguel Garcia Sanchez. All rights reserved.
-//
+
+//: Playground - noun: a place where people can play
 
 import UIKit
 
-class ViewController: UIViewController {
+var divisible = 0
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib. esto es una prueba
+var par = 0
+
+for rango in 0...100 {
+    
+    divisible = rango%5
+    par = rango%2
+    
+    
+    
+    if divisible == 0 {
+        
+        print("El numero \(rango) Bingo!!!")
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    if par == 0 {
+        
+        print("El numero \(rango) es par!!!")
     }
-
-
+    
+    if par != 0 {
+        
+        print("El numero \(rango) es impar!!!")
+        
+    }
+    
+    
+    if ( rango > 30 && rango < 40 ) {
+        print("El numero \(rango) Viva Swift!!!")
+        
+    }
 }
+
 
